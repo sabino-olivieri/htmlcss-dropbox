@@ -23,9 +23,11 @@ body{
 
 /* COMMON */
 :root{
+    --header-height: 60px;
     --hero-color: #B4D0E7;
     --gap-col: 15px;
     --space-section: 40px;
+    --btn-color: #0061FF;
 }
 
 .flex{
@@ -38,6 +40,10 @@ body{
 
 .gap15{
     gap: var(--gap-col);
+}
+
+.y-center{
+    align-items: center;
 }
 
 .container-large{
@@ -98,6 +104,11 @@ body{
     margin-bottom: var(--space-section);
 }
 
+.btn-small{
+    padding: 5px 10px;
+    background-color: var(--btn-color);
+    color: white;
+}
 
 /* DEBUG */
 .hero .container-large{
@@ -118,19 +129,24 @@ main section:nth-child(1){
 /* HEADER */
 
 header{
-    height: 60px;
+    height: var(--header-height);
     position: sticky;
     top: 0;
     left: 0;
-    /* debug */
-    background-color: green;
+    background-color: white;
     justify-content: space-between;
+    color: black;
+    padding: 0px 10px;
+    font-size: 0.8rem;
 }
 
-.header-left, .header-right{
-    min-width: 30%;
-    /* debug */
-    background-color: red;
+.header-left img{
+    width: 25%;
+    min-width: 95px;
+}
+
+.header-right{
+    justify-content: end;
 }
 
 /* MAIN */
