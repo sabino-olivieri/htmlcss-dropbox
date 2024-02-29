@@ -19,6 +19,7 @@ a{
 
 body{
     font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
 }
 
 /* COMMON */
@@ -64,10 +65,9 @@ body{
 
 .col-small{
     width: calc(100% / 3 - var(--gap-col));
-
-    /* debug */
-    background-color: lightgray;
-    height: 100px;
+        /* debug */
+        background-color: grey;
+        height: 300px;
 }
 
 .col-medium{
@@ -92,8 +92,19 @@ body{
     border: 2px solid white;
 }
 
+.pd-main{
+    padding-top: 100px;
+}
 
-.hero,
+.pd30{
+    padding: 30px 0px;
+}
+
+.pd40{
+    padding: 40px 0px;
+}
+
+
 .buisness-plan,
 .partner,
 .dropbox-buisness,
@@ -105,20 +116,14 @@ body{
 }
 
 .btn-small{
-    padding: 5px 10px;
+    padding: 8px;
     background-color: var(--btn-color);
     color: white;
+    display: inline-block;
 }
 
 /* DEBUG */
-.hero .container-large{
-    background-color: orange;
-    height: 300px;
-}
 
-main section:nth-child(1){
-    background-color: aquamarine;
-}
 
 .faq > div{
     background-color: darksalmon;
@@ -133,6 +138,7 @@ header{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 9999;
     background-color: white;
     justify-content: space-between;
     color: black;
@@ -153,37 +159,86 @@ header{
 
 /* hero */
 .hero{
-    background-color: var(--hero-color)
+    background-color: var(--hero-color);
+    margin-bottom: 100px;
+}
+
+.hero h1{
+    font-size: 4rem;
 }
 
 .hero-col-small{
-    width: 30%;
-    /* debug */
-    background-color: black;
-    height: 250px;
+    width: calc(100% / 3);
+}
+
+.hero-col-small .fa-arrow-down{
+    font-size: 3rem;
+    padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 .hero-col-large{
-    width: 70%;
-    /* debug */
-    background-color: rgb(100, 100, 100);
-    height: 250px;
+    width: calc(100% / 3 * 2);
+    padding: 40px;
+    position: relative;
 }
 
+.hero-col-large img{
+    position: absolute;
+    top: 0;
+}   
 
 /* buisness plan */
 
-.title-buisness{
-    /* debug */
-    height: 100px;
-    background-color: blueviolet;
-    margin-bottom: 20px;
+.title-buisness h2{
+    font-size: 2.2rem;
 }
 
-.buisness-plan .flex{
+.billing{
+    padding-bottom: 40px;
+    justify-content: start;
+    align-items: center;
+}
+
+.billing input{
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.billing span:first-of-type{
+    padding-right: 20px;
+}
+
+.subscription{
     justify-content: space-between;
 }
 
+.subscription .col-small{
+    border: 1px solid lightgray;
+}
+
+.type-sub{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.subscription .col-small div:not(.type-sub){
+    padding: 50px 25px;
+    line-height: 2rem;
+}
+.anniversary{
+    display: block;
+    color: grey;
+}
+.subscription .col-small li{
+    list-style: 20px;
+}
+
+.subscription .col-small li:nth-child(2){
+    list-style: url(../img/share-nodes-solid.svg);
+}
 .enterprise{
     /* debug */
     height: 100px;
