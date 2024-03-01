@@ -19,11 +19,11 @@ a, button{
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 span, p{
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 /* COMMON */
@@ -82,12 +82,8 @@ h2{
     width: 60%;
 }
 
-.box-banner{
+[class^="box-banner"]{
     width: calc(100% / 3);
-    /* debug */
-    background-color: gold;
-    /* height: 300px; */
-    border: 2px solid white;
 }
 
 .pd-main{
@@ -118,22 +114,33 @@ h2{
     padding-bottom: 15px;
 }
 
+.link{
+    color: var(--btn-color);
+    text-decoration: underline;
+}
+
 section, main, .subscription{
     padding-bottom: var(--space-section);
 }
 
 .btn{
-    padding: 5px 10px;
+    padding: 10px 10px;
     background-color: var(--btn-color);
     color: white;
     text-align: center;
 }
 
+
 .btn-white{
-    padding: 5px 10px;
+    padding: 10px 10px;
     background-color: white;
     text-align: center;
     border: 1px solid black;
+}
+
+button.btn-large{
+    display: inline-block;
+    width: 100%;
 }
 
 /* DEBUG */
@@ -244,17 +251,11 @@ header{
     color: grey;
 }
 
-
 .subscription .col-small li span{
     padding-left: 0.62em;
 }
 
-.col-small .pd30 span a{
-    color: var(--btn-color);
-    text-decoration: underline;
-}
-
-.col-small hr{
+.col-small hr, .box-banner-tx hr{
     width: 25%;
     border: 1px solid lightgray;
 }
@@ -283,16 +284,88 @@ header{
 
 /* banner logos */
 
+.banner-logos{
+    align-items: start;
+}
+
 .box-logo{
     width: 50%;
     aspect-ratio: 1 / 1;
-    /* height: 100%; */
-    /* debug */
-    background-color: red;
-    border: 1px solid white;
+    justify-content: center;
 }
 
+.box-logo img{
+    object-fit: cover;
+    object-position: center;
+    filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(184deg) brightness(96%) contrast(100%);
+    width: 50%;
+
+}
+
+.box-banner-lf .box-logo:nth-child(1){
+    background-color: #A2D39B;
+    border: 5px solid #c3ffbb;
+}
+.box-banner-lf .box-logo:nth-child(2){
+    background-color: #61082B;
+}
+
+.box-banner-lf .box-logo:nth-child(3){
+    background-color: #0093CE;
+}
+
+.box-banner-lf .box-logo:nth-child(4){
+    background-color: #FF1C1C;
+}
+
+.box-banner-tx{
+    background-color: #F5F5F5;
+    overflow: auto;
+    padding: 30px;
+    aspect-ratio: 1 / 1;
+}
+
+.box-banner-tx img{
+    width: 50%;
+}
+
+.box-banner-rt .box-logo:nth-child(1){
+    background-color: #D5001F;
+
+}
+.box-banner-rt .box-logo:nth-child(2){
+    background-color: #B4D0E7;
+}
+
+.box-banner-rt .box-logo:nth-child(3){
+    background-color: #0D2481;
+}
+
+.box-banner-rt .box-logo:nth-child(4){
+    background-color: #FFD830;
+}
+
+
 /* freetrial */
+
+.free-trial{
+    background-color: var(--hero-color);
+    padding: 100px 0px;
+    margin-bottom: 40px;
+}
+
+.free-trial .container-small{
+    align-items: start;
+}
+
+.free-trial .container-small .col-medium{
+    padding: 0px 40px;
+}
+
+.free-trial .container-small .col-medium button{
+    border: 0px;
+}
+
 
 /* faq */
 
