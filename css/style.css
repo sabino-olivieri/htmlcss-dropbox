@@ -12,19 +12,23 @@ ul{
     list-style: none;
 }
 
-a{
+a, button{
     all: unset;
     cursor: pointer;
 }
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
+}
+
+span{
+    line-height: 1.3em;
 }
 
 /* COMMON */
 :root{
-    --header-height: 60px;
+    --header-height: 50px;
     --hero-color: #B4D0E7;
     --gap-col: 15px;
     --space-section: 40px;
@@ -66,8 +70,8 @@ body{
 .col-small{
     width: calc(100% / 3 - var(--gap-col));
         /* debug */
-        background-color: grey;
-        height: 300px;
+        /* background-color: grey;
+        height: 300px; */
 }
 
 .col-medium{
@@ -96,6 +100,10 @@ body{
     padding-top: 100px;
 }
 
+.pd20{
+    padding: 20px 0px;
+}
+
 .pd30{
     padding: 30px 0px;
 }
@@ -104,22 +112,24 @@ body{
     padding: 40px 0px;
 }
 
-
-.buisness-plan,
-.partner,
-.dropbox-buisness,
-.numbers,
-.banner-logos,
-.free-trial,
-.faq{
-    margin-bottom: var(--space-section);
+.pd-top{
+    padding-top: 20px;
 }
 
-.btn-small{
-    padding: 8px;
+.pd-li{
+    padding-bottom: 15px;
+}
+
+
+section, main{
+    padding-bottom: var(--space-section);
+}
+
+.btn{
+    padding: 5px 10px;
     background-color: var(--btn-color);
     color: white;
-    display: inline-block;
+    text-align: center;
 }
 
 /* DEBUG */
@@ -143,12 +153,12 @@ header{
     justify-content: space-between;
     color: black;
     padding: 0px 10px;
-    font-size: 0.8rem;
+    border-bottom: 1px solid lightgray;
 }
 
-.header-left img{
-    width: 25%;
-    min-width: 95px;
+.header-left ul li img{
+    width: 80px;
+    min-width: 80px;
 }
 
 .header-right{
@@ -221,27 +231,43 @@ header{
 .type-sub{
     padding: 10px 0;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid lightgray;
 }
 
-.subscription .col-small div:not(.type-sub){
-    padding: 50px 25px;
-    line-height: 2rem;
+.card{
+    padding: 40px 25px 0px 25px;
+}
+
+.title-sub{
+    line-height: 1.5rem;
 }
 .anniversary{
     display: block;
     color: grey;
 }
-.subscription .col-small li{
-    list-style: 20px;
+
+
+.subscription .col-small li span{
+    padding-left: 0.62em;
 }
 
-.subscription .col-small li:nth-child(2){
-    list-style: url(../img/share-nodes-solid.svg);
+.col-small .pd30 span a{
+    color: var(--btn-color);
+    text-decoration: underline;
 }
+
+.col-small hr{
+    width: 25%;
+    border: 1px solid lightgray;
+}
+
+.subscription .col-small .highlights li i{
+    color: var(--btn-color);
+}
+
 .enterprise{
     /* debug */
-    height: 100px;
+    height: 100px;  
     background-color: blueviolet;
     margin-top: 20px;
 }

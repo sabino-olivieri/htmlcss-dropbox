@@ -7,18 +7,17 @@
     <title>Dropbox</title>
     <link rel="stylesheet" href="./css/style.css">
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
 
     <!-- header -->
     <header class="flex">
-        <div class="header-left flex gap15 y-center">
-            <img src="./img/logo-small.png" alt="Logo Dropbox">
-            <ul class="flex gap15">
+        <div class="header-left flex">
+            
+            <ul class="flex gap15 y-center">
+                <li><a href=""><img src="./img/logo-small.png" alt="Logo Dropbox"></a></li>
                 <li><a href="">Perchè Dropbox</a></li>
                 <li><a href="">Funzioni</a></li>
                 <li><a href="">Piani e Prezzi</a></li>
@@ -31,7 +30,7 @@
                 <li><a href="">Supporto</a></li>
                 <li><a href=""></a>Contatta l'ufficio vendite</li>
                 <li><a href=""></a>Accedi</li>
-                <li><a href=""><span class="btn-small">Inizia</span></a></li>
+                <li><a href=""><button class="btn">Inizia</button></a></li>
             </ul>
         </div>
     </header>
@@ -51,7 +50,7 @@
                             Dropbox Buisness è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente. 
                         </span>
                         <div class="pd30">
-                            <span class="btn-small">Inizia la tua prova gratuita</span>
+                            <span class="btn">Inizia la tua prova gratuita</span>
                         </div>
                         <span>Annulla in qualsiasi momento</span>
                         <div>
@@ -82,33 +81,211 @@
             </div>
 
             <div class="subscription flex">
+                <!-- Professional -->
                 <div class="col-small">
-
+                    
                     <div class="type-sub">
                         <i class="fa-solid fa-user"></i>
                         <span>Singolo</span>
                     </div>
 
-                    <div>
-                        <h3>Professional</h3>
-                        <span><strong>€ 12.00</strong></span>
-                        <span class="anniversary">/mese</span>
+                    <div class="card">
+                        <div class="title-sub">
+                            <h3>Professional</h3>
+                            <span><strong>€ 12.00</strong></span>
+                            <span class="anniversary">/mese</span>
+                        </div>
 
-                        <ul>
-                            <li><i class="fa-solid fa-user"></i> 1 utente</li>
-                            <li>5 TB di spazio di archiviazione sicuro</li>
-                            <li></li>
+                        <ul class="pd30">
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-user"></i>
+                                <span>1 utente</span>
+                            </li>
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-folder"></i>
+                                <span>5 TB di spazio di archiviazione sicuro</span>
+                            </li>
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                            </li>
                         </ul>
+
+                        <a href="">
+                            <div class="btn">
+                                <button>Prova gratis per 30 giorni</button>
+                            </div>
+                        </a>
+
+                        <div class="pd30">
+                            <span>oppure <a href="">acquista ora</a></span>
+                        </div>
+
+                        <hr>
+
+                        <div class="highlights pd-top">
+                            <span><strong>Punti salienti del piano</strong></span>
+
+                            <ul class="pd20">
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                                </li>
+                                
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
+                <!-- /Professional -->
 
+                <!-- Advanced -->
                 <div class="col-small">
+                    
+                    <div class="type-sub">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Team</span>
+                    </div>
 
+                    <div class="card">
+                        <div class="title-sub">
+                            <h3>Advanced</h3>
+                            <span><strong>€ 18.00</strong></span>
+                            <span class="anniversary">/utente/mese</span>
+                        </div>
+
+                        <ul class="pd30">
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-user"></i>
+                                <span>3 o più utenti</span>
+                            </li>
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-folder"></i>
+                                <span>Tutto lo spazio di cui ha bisogno il tuo team</span>
+                            </li>
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <span>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</span>
+                            </li>
+                        </ul>
+
+                        <a href="">
+                            <div class="btn">
+                                <button>Prova gratis per 30 giorni</button>
+                            </div>
+                        </a>
+
+                        <div class="pd30">
+                            <span>oppure <a href="">acquista ora</a></span>
+                        </div>
+
+                        <hr>
+
+                        <div class="highlights pd30">
+                            <span><strong>Punti salienti del piano</strong></span>
+
+                            <ul class="pd-top">
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Nessun limite di spazio per i tuoi file</span>
+                                </li>
+                                
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </li>
+
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Risparmio del 50% rispetto alle iscrizioni singole</span>
+                                </li>
+
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Possibilità di inserire nuovi membri del team</span>
+                                </li>
+
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Gestione dei permessi in base ai ruoli</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
+                <!-- /Advanced -->
 
+                <!-- Enterprise -->
                 <div class="col-small">
+                    
+                    <div class="type-sub">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Azienda</span>
+                    </div>
 
+                    <div class="card">
+                        <div class="title-sub">
+                            <h3>Enterprise</h3>
+                            <span><strong>Contattaci</strong></span>
+                            <span class="anniversary">-</span>
+                        </div>
+
+                        <ul class="pd30">
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-user"></i>
+                                <span>10 o più utenti</span>
+                            </li>
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-folder"></i>
+                                <span>Soluzioni personalizzabili per la tua azienda</span>
+                            </li>
+                            <li class="flex pd-li">
+                                <i class="fa-solid fa-share-nodes"></i>
+                                <span>Assistenza personalizzata pe aiutare gli amministratori in una gestione su larga scala </span>
+                            </li>
+                        </ul>
+
+                        <a href="">
+                            <div class="btn">
+                                <button>Contattaci</button>
+                            </div>
+                        </a>
+
+                        <div class="pd30">
+                            <span>oppure <a href="">acquista ora</a></span>
+                        </div>
+
+                        <hr>
+
+                        <div class="highlights pd30">
+                            <span><strong>Punti salienti del piano</strong></span>
+
+                            <ul class="pd-top">
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Cartelle offline su dispositivi mobili</span>
+                                </li>
+                                
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Servizio assistenza 24/h</span>
+                                </li>
+
+                                <li class="flex pd-li">
+                                    <i class="fa-solid fa-check"></i>
+                                    <span>Possibilità di personalizzazione totale</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
+                <!-- /Enterprise -->
             </div>
 
 
