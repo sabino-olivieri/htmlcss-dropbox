@@ -30,7 +30,7 @@ span, p{
 :root{
     --header-height: 50px;
     --hero-color: #B4D0E7;
-    --gap-col: 15px;
+    --gap-col: 25px;
     --space-section: 40px;
     --btn-color: #0061FF;
 }
@@ -43,9 +43,11 @@ span, p{
     flex-wrap: wrap;
 }
 
-.gap15{
+.gap{
     gap: var(--gap-col);
 }
+
+
 
 .y-center{
     align-items: center;
@@ -62,6 +64,10 @@ span, p{
 
 }
 
+
+h2{
+    font-size: 1.8rem;
+}
 
 .col-small{
     width: calc(100% / 3 - var(--gap-col));
@@ -172,7 +178,8 @@ header{
 }
 
 .hero h1{
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: 800;
 }
 
 .hero-col-small{
@@ -198,9 +205,6 @@ header{
 
 /* buisness plan */
 
-.title-buisness h2{
-    font-size: 2.2rem;
-}
 
 .billing{
     padding-bottom: 30px;
