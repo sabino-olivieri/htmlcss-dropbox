@@ -69,16 +69,11 @@ span, p{
 
 .col-medium{
     width: 40%;
-    /* debug */
-    background-color: cadetblue;
-    height: 300px;
+
 }
 
 .col-large{
     width: 60%;
-    /* debug */
-    background-color: bisque;
-    height: 300px;
 }
 
 .box-banner{
@@ -126,6 +121,13 @@ section, main, .subscription{
     background-color: var(--btn-color);
     color: white;
     text-align: center;
+}
+
+.btn-white{
+    padding: 5px 10px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
 }
 
 /* DEBUG */
@@ -261,11 +263,15 @@ header{
     width: 70%;
 }
 
-.enterprise .pd-card div:last-child{
+.enterprise .pd-card div:last-child:not(.btn){
     width: 30%;
     text-align: center;
 }
 /* partner */
+
+.partner{
+    align-items: start;
+}
 
 /* dropbox business */
 
