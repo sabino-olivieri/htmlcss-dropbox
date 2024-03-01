@@ -22,7 +22,7 @@ body{
     font-size: 0.7rem;
 }
 
-span{
+span, p{
     line-height: 1.3em;
 }
 
@@ -55,23 +55,16 @@ span{
     width: 80%;
     margin: 0 auto;
 
-    /* debug */
-    border: 1px solid black;
 }
 .container-small{
     width: 75%;
     margin: 0 auto;
 
-    /* debug */
-    border: 1px solid black;
 }
 
 
 .col-small{
     width: calc(100% / 3 - var(--gap-col));
-        /* debug */
-        /* background-color: grey;
-        height: 300px; */
 }
 
 .col-medium{
@@ -116,12 +109,15 @@ span{
     padding-top: 20px;
 }
 
+.pd-card{
+    padding: 25px 25px 0px 25px;
+}
+
 .pd-li{
     padding-bottom: 15px;
 }
 
-
-section, main{
+section, main, .subscription{
     padding-bottom: var(--space-section);
 }
 
@@ -205,7 +201,7 @@ header{
 }
 
 .billing{
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     justify-content: start;
     align-items: center;
 }
@@ -224,7 +220,7 @@ header{
     justify-content: space-between;
 }
 
-.subscription .col-small{
+.subscription .col-small, .enterprise{
     border: 1px solid lightgray;
 }
 
@@ -232,10 +228,6 @@ header{
     padding: 10px 0;
     text-align: center;
     border-bottom: 1px solid lightgray;
-}
-
-.card{
-    padding: 40px 25px 0px 25px;
 }
 
 .title-sub{
@@ -265,11 +257,13 @@ header{
     color: var(--btn-color);
 }
 
-.enterprise{
-    /* debug */
-    height: 100px;  
-    background-color: blueviolet;
-    margin-top: 20px;
+.enterprise .pd-card .title-sub{
+    width: 70%;
+}
+
+.enterprise .pd-card div:last-child{
+    width: 30%;
+    text-align: center;
 }
 /* partner */
 
