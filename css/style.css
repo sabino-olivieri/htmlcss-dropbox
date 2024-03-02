@@ -47,8 +47,6 @@ span, p{
     gap: var(--gap-col);
 }
 
-
-
 .y-center{
     align-items: center;
 }
@@ -128,19 +126,21 @@ section, main, .subscription{
     background-color: var(--btn-color);
     color: white;
     text-align: center;
+    transition: background-color 0.5s ease 0s;
 }
-
 
 .btn-white{
     padding: 10px 10px;
     background-color: white;
     text-align: center;
     border: 1px solid black;
+    transition: all 0.5s ease 0s;
 }
 
 button.btn-large{
     display: inline-block;
     width: 100%;
+    padding: 10px 0px;
 }
 
 
@@ -200,6 +200,7 @@ header{
 .hero-col-large img{
     position: absolute;
     top: 0;
+    left: 0;
 }   
 
 /* buisness plan */
@@ -432,6 +433,19 @@ header li:hover{
 header li a{
     line-height: var(--header-height);
 }
+
+/* button */
+
+.btn:hover{
+    background-color: #3f89ff;
+}
+
+.btn-white:hover{
+    background-color: var(--btn-color);
+    color: white;
+    border: 1px solid white;
+}
+
 
 /* faq */
 
