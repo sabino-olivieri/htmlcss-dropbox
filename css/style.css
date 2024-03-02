@@ -28,7 +28,7 @@ span, p{
 
 /* COMMON */
 :root{
-    --header-height: 50px;
+    --header-height: 70px;
     --hero-color: #B4D0E7;
     --gap-col: 25px;
     --space-section: 40px;
@@ -143,14 +143,6 @@ button.btn-large{
     width: 100%;
 }
 
-/* DEBUG */
-
-
-.faq > div{
-    background-color: darksalmon;
-    border: 1px solid black;
-    height: 100px;
-}
 
 /* HEADER */
 
@@ -257,7 +249,7 @@ header{
 
 .col-small hr, .box-banner-tx hr{
     width: 25%;
-    border: 1px solid lightgray;
+    opacity: 50%;
 }
 
 .subscription .col-small .highlights li i{
@@ -281,6 +273,10 @@ header{
 /* dropbox business */
 
 /* numbers */
+
+.numbers{
+    padding: 100px 0px;
+}
 
 /* banner logos */
 
@@ -345,7 +341,6 @@ header{
     background-color: #FFD830;
 }
 
-
 /* freetrial */
 
 .free-trial{
@@ -366,18 +361,70 @@ header{
     border: 0px;
 }
 
-
 /* faq */
+
+.faq .pd20 p, .faq .pd20 .fa-chevron-up{
+    display: none;
+}
+
+.faq div.flex{
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* FOOTER */
 
 footer{
     background-color: black;
+    color: white;
+}
+
+.col-footer ul li{
+    line-height: 2rem;
 }
 
 .col-footer{
     width: calc(100% / 5 - var(--gap-col));
-    /* debug */
-    background-color: white;
-    height: 300px;
+}
+
+footer hr{
+    width: 10%;
+    min-width: 80px;
+    opacity: 50%;
+}
+
+.sub-footer a{
+    margin-left: 10px;
+    align-items: center;
+}
+
+.sub-footer .fa-caret-up{
+    padding-left: 5px;
+}
+
+/* EFFECTS */
+
+/* header */
+header li:hover{
+    border-bottom: 2px solid var(--btn-color);
+    color: var(--btn-color);
+}
+
+header li a{
+    line-height: var(--header-height);
+}
+
+/* faq */
+
+.faq .pd20:hover p, .faq .pd20:hover .fa-chevron-up{
+    display: block;
+}
+
+.faq .pd20:hover .fa-chevron-down{
+    display: none;
+}
+
+footer a:hover{
+    border-bottom: 1px solid var(--btn-color);
+    color: var(--btn-color);
 }
