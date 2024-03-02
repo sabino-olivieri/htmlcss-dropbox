@@ -405,8 +405,27 @@ footer hr{
 /* EFFECTS */
 
 /* header */
+
+header li{
+    position: relative;
+    transition: color 0.5s ease 0s; 
+}
+
+header li:after { 
+    content: "";
+    height: 5%; 
+    left: 0; 
+    bottom: 0; 
+    width: 0px;  
+    position: absolute; 
+    transition: width 0.5s ease 0s; 
+  }
+
+header li:hover:after{ 
+    width: 100%;
+    background: var(--btn-color) 
+}
 header li:hover{
-    border-bottom: 2px solid var(--btn-color);
     color: var(--btn-color);
 }
 
