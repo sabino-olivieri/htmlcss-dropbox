@@ -19,7 +19,7 @@ a, button{
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.9rem;
+    font-size: var(--font-text)
 }
 
 span, p{
@@ -33,6 +33,7 @@ span, p{
     --gap-col: 25px;
     --space-section: 40px;
     --btn-color: #0061FF;
+    --font-text: 0.9rem;
 }
 
 .flex{
@@ -364,9 +365,9 @@ header{
 
 /* faq */
 
-.faq .pd20 p, .faq .pd20 .fa-chevron-up{
+/* .faq .pd20 p, .faq .pd20 .fa-chevron-up{
     display: none;
-}
+} */
 
 .faq div.flex{
     justify-content: space-between;
@@ -419,6 +420,7 @@ header li:after {
     bottom: 0; 
     width: 0px;  
     position: absolute; 
+    z-index: -1;
     transition: width 0.5s ease 0s; 
   }
 
@@ -449,13 +451,33 @@ header li a{
 
 /* faq */
 
-.faq .pd20:hover p, .faq .pd20:hover .fa-chevron-up{
+.faq .fa-chevron-up{
+    display: none;
+}
+.faq p {
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.faq div.pd20:hover p{
+    height: auto;
+    opacity: 1;
+    padding-top: 20px;
+}
+
+.faq div.pd20:hover .fa-chevron-up{
     display: block;
 }
 
-.faq .pd20:hover .fa-chevron-down{
+.faq div.pd20:hover .fa-chevron-down{
     display: none;
 }
+
+/* footer */
 
 footer a:hover{
     border-bottom: 1px solid var(--btn-color);
