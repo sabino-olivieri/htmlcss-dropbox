@@ -22,7 +22,7 @@ body{
     font-size: var(--font-text)
 }
 
-span, p{
+span, p, .title-sub{
     line-height: 1.4em;
 }
 
@@ -210,7 +210,6 @@ header{
 .billing{
     padding-bottom: 30px;
     justify-content: start;
-    align-items: center;
 }
 
 .billing input{
@@ -237,9 +236,6 @@ header{
     border-bottom: 1px solid lightgray;
 }
 
-.title-sub{
-    line-height: 1.5rem;
-}
 .anniversary{
     display: block;
     color: grey;
@@ -295,7 +291,7 @@ header{
 .box-logo img{
     object-fit: cover;
     object-position: center;
-    filter: invert(100%) sepia(0%) saturate(7476%) hue-rotate(184deg) brightness(96%) contrast(100%);
+    filter: invert(100%);
     width: 50%;
 
 }
@@ -365,13 +361,8 @@ header{
 
 /* faq */
 
-/* .faq .pd20 p, .faq .pd20 .fa-chevron-up{
-    display: none;
-} */
-
 .faq div.flex{
     justify-content: space-between;
-    align-items: center;
 }
 
 /* FOOTER */
@@ -397,7 +388,6 @@ footer hr{
 
 .sub-footer a{
     margin-left: 10px;
-    align-items: center;
 }
 
 .sub-footer .fa-caret-up{
