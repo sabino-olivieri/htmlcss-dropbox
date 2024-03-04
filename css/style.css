@@ -54,11 +54,13 @@ span, p, .title-sub{
 
 .container-large{
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 
 }
 .container-small{
     width: 75%;
+    max-width: 1100px;
     margin: 0 auto;
 
 }
@@ -372,6 +374,10 @@ footer{
     color: white;
 }
 
+footer .container-large{
+    justify-content: space-between;
+}
+
 .col-footer ul li{
     line-height: 2rem;
 }
@@ -386,13 +392,39 @@ footer hr{
     opacity: 50%;
 }
 
-.sub-footer a{
-    margin-left: 10px;
-}
+.language{
+    min-width: 9em;
+    width: 15%;
+    position: relative;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px;
+  }
+  
+select {
+    all: unset;
+    width: 100%;
+    padding: 4px;
+    color:white;
+    cursor: pointer;
+  }
 
-.sub-footer .fa-caret-up{
-    padding-left: 5px;
-}
+select option{
+    color: black;
+  }
+  
+  .language::after {
+    font: var(--fa-font-solid);
+    content: "\f0d8";
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
+  }
+
+  .language:hover, .language:hover select{
+    color: var(--btn-color);
+  }
 
 /* EFFECTS */
 
@@ -403,9 +435,9 @@ header li{
     transition: color 0.5s ease 0s; 
 }
 
-header li:after { 
+header li:not(.no-effects)::after { 
     content: "";
-    height: 5%; 
+    height: 4px; 
     left: 0; 
     bottom: 0; 
     width: 0px;  
@@ -422,8 +454,8 @@ header li:hover{
     color: var(--btn-color);
 }
 
-header li a{
-    line-height: var(--header-height);
+header li{
+    height: var(--header-height);
 }
 
 /* button */
