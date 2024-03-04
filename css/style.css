@@ -169,7 +169,6 @@ header{
 
 .header-left ul li img{
     width: 80px;
-    min-width: 80px;
 }
 
 .header-right{
@@ -218,19 +217,39 @@ header{
 /* buisness plan */
 
 
-.billing{
+.billing-box{
     padding-bottom: 30px;
     justify-content: start;
 }
-
-.billing input{
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
+.billing-box span:first-of-type{    
+    padding-left: 10px;
 }
 
-.billing span:first-of-type{
-    padding-right: 20px;
+.billing input[type='radio'] {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 3px solid var(--btn-color);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+
+    
+  }
+
+.billing input[type='radio']:before {
+    font: var(--fa-font-solid);
+    content: '\f058';
+    color: var(--btn-color);
+    opacity: 0;
+    font-size: 25px;
+}
+
+.billing input[type='radio']:checked:before {
+    opacity: 1;
+
 }
 
 .subscription{
@@ -366,7 +385,7 @@ header{
     padding: 0px 40px;
 }
 
-.free-trial .container-small .col-medium button{
+.free-trial .container-small .col-medium{
     border: 0px;
 }
 
@@ -407,7 +426,7 @@ footer hr{
     position: relative;
     color: white;
     border: 1px solid white;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 5px;
   }
   
