@@ -19,7 +19,11 @@ a, button{
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: var(--font-text)
+    font-size: var(--font-text);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 span, p, .title-sub{
@@ -129,7 +133,8 @@ section, main, .subscription{
     background-color: var(--btn-color);
     color: white;
     text-align: center;
-    transition: background-color 0.5s ease 0s;
+    border: 1px solid var(--btn-color);
+    transition: all 0.5s ease;
 }
 
 .btn-white{
@@ -137,7 +142,7 @@ section, main, .subscription{
     background-color: white;
     text-align: center;
     border: 1px solid black;
-    transition: all 0.5s ease 0s;
+    transition: all 0.5s ease;
 }
 
 button.btn-large{
@@ -189,9 +194,13 @@ header{
 }
 
 .hero-col-small .fa-arrow-down{
-    font-size: 3rem;
     padding-top: 50px;
     padding-bottom: 10px;
+}
+
+.fa-arrow-down{
+    font-size: 3em;
+    transition: 0.5s ease;
 }
 
 .hero-col-large{
@@ -456,18 +465,28 @@ header li:hover{
 
 header li{
     height: var(--header-height);
+}   
+
+.fa-arrow-down:hover{
+    color: var(--btn-color);
 }
+
 
 /* button */
 
 .btn:hover{
-    background-color: #3f89ff;
+    background-color: white;
+    color: black;
+    border: 1px solid var(--btn-color);
+    border-radius: 20px;
+    box-shadow: 2px 2px var(--btn-color);
 }
 
 .btn-white:hover{
     background-color: var(--btn-color);
     color: white;
-    border: 1px solid white;
+    border: 1px solid var(--btn-color);
+    border-radius: 20px;
 }
 
 
